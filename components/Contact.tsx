@@ -50,14 +50,14 @@ export default function Contact() {
               <label htmlFor="message" className="block text-sm font-medium text-slate-700">Message</label>
               <textarea
                 id="message" name="message" rows={6} required
-                className="mt-1 w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-pink-400"
+                className="mt-1 w-full rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-rose-400"
               />
             </div>
 
             <input type="text" name="_gotcha" className="hidden" aria-hidden="true" />
 
             <button
-              className="rounded-xl bg-pink-500 px-5 py-3 text-white transition hover:bg-pink-600 active:scale-95"
+              className="rounded-xl bg-rose-400 px-5 py-3 text-white transition hover:bg-rose-200 active:scale-95"
               type="submit"
             >
               Send message
