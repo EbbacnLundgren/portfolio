@@ -25,7 +25,7 @@ export function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full z-50 transition-all",
+        "fixed top-0 w-full z-50 transition-all bg-orange-100/70 backdrop-blur border-b border-orange-200",
         scrolled
           ? "bg-white/80 backdrop-blur shadow-sm"
           : "bg-transparent"
@@ -40,7 +40,7 @@ export function Header() {
             <a
               key={it.href}
               href={it.href}
-              className="relative text-slate-600 hover:text-ink-700 transition-colors after:block after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
+              className="relative text-slate-700 hover:text-orange-600 transition-colors after:block after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all hover:after:w-full"
             >
               {it.label}
             </a>

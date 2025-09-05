@@ -22,9 +22,8 @@ export const data = {
   hero: {
     title: "Ebba Lundgren",
     subtitle:
-      "Master student in Information- and Communication Engineering at LTH, 5th year",
+      "5th year master student in Information- and Communication Engineering at LTH",
     location: "Sweden",
-    osRepos: 50
   },
   links: {
     github: "https://github.com/EbbacnLundgren",

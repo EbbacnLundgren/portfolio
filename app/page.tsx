@@ -30,7 +30,7 @@ export default function Page() {
                 className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-50"
                 target="_blank"
               >
-                Download my CV
+                Download my Resume
               </a>
             </div>
             <ul className="mt-6 flex flex-wrap gap-6 text-sm text-slate-600">
@@ -109,12 +109,12 @@ export default function Page() {
               </button>
             </form>
             <p className="text-xs text-slate-500 mt-3">
-              Byt ut action-URL till din Formspree/Getform eller använd en mailto-länk.
+              
             </p>
           </div>
 
           <div className="card p-6">
-            <h3 className="font-medium">Direkta länkar</h3>
+            <h3 className="font-medium">Links</h3>
             <ul className="mt-3 space-y-3">
               <li><a href={data.links.github} className="hover:underline" target="_blank">GitHub</a></li>
               <li><a href={data.links.linkedin} className="hover:underline" target="_blank">LinkedIn</a></li>
