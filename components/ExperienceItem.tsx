@@ -8,7 +8,7 @@ export function ExperienceItem({ item }: { item: Experience }) {
           <h3 className="text-lg font-semibold tracking-tight text-slate-900">
             {item.title}
           </h3>
-          <p className="mt-0.5 text-base font-medium text-orange-600">
+          <p className="mt-0.5 text-base font-medium text-pink-600">
             {item.company}
           </p>
         </div>
