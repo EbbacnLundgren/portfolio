@@ -52,13 +52,14 @@ export const data = {
       company: "Alfa Laval",
       title: "Software Engineer Internship",
       period: "June 2023 - August 2023",
-      summary: "Python and SQL"
+      tech: ["Python and SQL"]
     },
     {
       company: "Bubbi AI",
       title: "Software Engineer / Web developer",
       period: "May 2023 - June 2023",
-      summary: "Developed tracking script for e-commerce to be used by internal ML/AI"
+      summary: "Developed tracking script for e-commerce to be used by internal ML/AI",
+      tech: ["Python and Google Cloud"]
     },
     {
       company: "Trattoria Montanari",

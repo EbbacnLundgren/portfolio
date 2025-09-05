@@ -16,7 +16,7 @@ export default function Page() {
         <div className="grid gap-12 lg:grid-cols-[1.15fr,0.85fr] items-start">
           {/* Vänster: namn + text */}
           <div className="space-y-6">
-            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-ink-900">
+            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">
               {data.hero.title}
             </h1>
             <p className="text-lg text-slate-700 max-w-xl">
