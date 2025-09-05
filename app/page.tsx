@@ -25,7 +25,7 @@ export default function Page() {
             <p className="text-sm text-slate-500">Location: {data.hero.location}</p>
           <div className="mt-6 flex flex-wrap gap-2">
             {["Python","TypeScript","React","SQL"].map(t => (
-              <span key={t} className="px-3 py-1 rounded-md bg-orange-50 text-orange-700 text-sm border border-orange-100">
+              <span key={t} className="px-3 py-1 rounded-md bg-pink-50 text-pink-700 text-sm border border-pink-100">
                 {t}
               </span>
             ))}
