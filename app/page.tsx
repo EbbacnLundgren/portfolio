@@ -4,6 +4,7 @@ import { Section } from "@/components/Section";
 import { ExperienceItem } from "@/components/ExperienceItem";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Briefcase, GraduationCap, Code, Mail } from "lucide-react";
+import Contact from "@/components/Contact";
 
 
 
@@ -83,33 +84,7 @@ export default function Page() {
       </Section>
 
       {/* Contact */}
-      <Section id="contact" title="Contact" caption="Lets connect!">
-        <div className="grid lg:grid-cols-2 gap-6">
-          <div className="card p-6">
-            <h3 className="font-medium">Send a message!</h3>
-            <form className="mt-4 space-y-4" action="https://formspree.io/f/your-id" method="POST">
-              <input name="name" required placeholder="Namn" className="w-full border rounded-xl px-4 py-3" />
-              <input name="email" type="email" required placeholder="E-post" className="w-full border rounded-xl px-4 py-3" />
-              <textarea name="message" required placeholder="Message" rows={5} className="w-full border rounded-xl px-4 py-3" />
-              <button className="rounded-xl bg-ink-700 hover:bg-pastel-pink-400 px-5 py-3 text-white hover:scale-105 hover:bg-ink-800 transition" type="submit">
-                Send Message!
-              </button>
-            </form>
-            <p className="text-xs text-slate-500 mt-3">
-              
-            </p>
-          </div>
-
-          <div className="card p-6">
-            <h3 className="font-medium">Links</h3>
-            <ul className="mt-3 space-y-3">
-              <li><a href={data.links.github} className="hover:underline" target="_blank">GitHub</a></li>
-              <li><a href={data.links.linkedin} className="hover:underline" target="_blank">LinkedIn</a></li>
-              <li><a href={`mailto:${data.links.email}`} className="hover:underline">E-post</a></li>
-            </ul>
-          </div>
-        </div>
-      </Section>
+      <Contact />
     </>
   );
 }
