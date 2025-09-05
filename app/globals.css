@@ -16,7 +16,6 @@ html, body {
 
 body {
   @apply bg-[rgb(var(--bg))] text-slate-800 antialiased;
-  @apply bg-gradient-to-br from-orange-50 to-rose-50 text-slate-800 antialiased;
 }
 
 .container-prose {

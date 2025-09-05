@@ -1,8 +1,8 @@
 export const site = {
   name: "Ebba — Portfolio",
-  shortName: "Ebba",
+  shortName: "Ebba Lundgren portfolio",
   url: "https://your-vercel-url.vercel.app",
-  tagline: "Full-stack-utvecklare och problemlösare.",
+  tagline: "5th year master student at LTH",
   ctaUrl: "/cv.pdf",
   privacyUrl: "#",
   imprintUrl: "#"
