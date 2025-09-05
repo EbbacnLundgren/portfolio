@@ -23,7 +23,14 @@ export default function Page() {
               {data.hero.subtitle}
             </p>
             <p className="text-sm text-slate-500">Location: {data.hero.location}</p>
+          <div className="mt-6 flex flex-wrap gap-2">
+            {["Java", "Python", "JavaScript", "TypeScript", "C", "SQL"].map((tech) => (
+              <span key={tech} className="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-sm">
+                {tech}
+              </span>
+            ))}
           </div>
+        </div>
 
           {/* Höger: korten */}
           <div className="card p-6">

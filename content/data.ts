@@ -29,7 +29,7 @@ export const data = {
     github: "https://github.com/EbbacnLundgren",
     linkedin: "https://www.linkedin.com/in/ebbacnlundgren/",
     email: "ebbacn.lundgren@gmail.com",
-    resumeUrl: "/cv.pdf"
+    resumeUrl: "/Ebba-CV.pdf"
   },
   experiences: <Experience[]>[
     {
@@ -39,7 +39,7 @@ export const data = {
       summary:
         "Worked with synthetic data at Core Technologies Embedded Analytics",
 
-      tech: ["Python"]
+      tech: ["Python, Unreal Engine, Houdini"]
     },
     {
       company: "Lunicore Student Consulting",
@@ -47,14 +47,6 @@ export const data = {
       period: "December 2024 — now",
       summary:
         "Consultant in different software projects, both developing and researching"
-    },
-    {
-      company: "Trattoria Montanari",
-      title: "Waiter",
-      period: "June 2020 - August 2024",
-      summary:
-        "Taught five new waitress/waiters during my time in different ages, worked as head waitress aswell"
-
     },
     {
       company: "Alfa Laval",
@@ -67,6 +59,14 @@ export const data = {
       title: "Software Engineer / Web developer",
       period: "May 2023 - June 2023",
       summary: "Developed tracking script for e-commerce to be used by internal ML/AI"
+    },
+    {
+      company: "Trattoria Montanari",
+      title: "Waiter",
+      period: "June 2020 - August 2024",
+      summary:
+        "Taught five new waitress/waiters during my time in different ages, worked as head waitress aswell"
+
     }
   ],
   projects: <Project[]>[
