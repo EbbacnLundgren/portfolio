@@ -16,7 +16,15 @@ export default {
           700: "#424a95",
           800: "#383e79",
           900: "#2f355f"
-        }
+        },
+        pastel: {
+          pink: {
+            100: "#fde2e4", // ljusljus
+            200: "#facfd2",
+            300: "#f8a5c2", // accent
+            400: "#f284b9",
+            500: "#ec699a"
+          }
       },
       boxShadow: {
         soft: "0 1px 2px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06)"

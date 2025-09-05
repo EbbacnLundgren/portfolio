@@ -3,12 +3,15 @@ import { data } from "@/content/data";
 import { Section } from "@/components/Section";
 import { ExperienceItem } from "@/components/ExperienceItem";
 import { ProjectCard } from "@/components/ProjectCard";
+import { Briefcase, GraduationCap, Code, Mail } from "lucide-react";
+
+
 
 export default function Page() {
   return (
     <>
       {/* Hero */}
-      <section className="container-prose pt-6 pb-12">
+      <section className="container-prose pt-6 pb-12 bg-gradient-to-br from-slate-50 to-slate-100">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-ink-900">
@@ -20,7 +23,7 @@ export default function Page() {
                 href="#projects"
                 className="inline-flex items-center rounded-xl bg-ink-700 px-5 py-3 text-white hover:bg-ink-800 transition"
               >
-                Show project
+                Show projects
               </Link>
               <a
                 href={data.links.resumeUrl}
@@ -36,18 +39,22 @@ export default function Page() {
           </div>
           <div className="card p-6">
             <div className="grid sm:grid-cols-2 gap-4">
-              <a href="#experience" className="card p-5 hover:shadow-md transition">
+              <a href="#experience" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Experience</h3>
+                <Briefcase className="w-5 h-5 text-ink-600" />
               </a>
-              <a href="#projects" className="card p-5 hover:shadow-md transition">
+              <a href="#projects" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">My Projects</h3>
+                <Code className="w-5 h-5 text-ink-600" />
               </a>
-              <a href="#education" className="card p-5 hover:shadow-md transition">
+              <a href="#education" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Education</h3>
+                <GraduationCap className="w-5 h-5 text-ink-600" />
               </a>
-              <a href="#contact" className="card p-5 hover:shadow-md transition">
+              <a href="#contact" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Contact me!</h3>
-                <p className="text-sm text-slate-600">Say Hi!</p>
+                <Mail className="w-5 h-5 text-ink-600" />
+                
               </a>
             </div>
           </div>
@@ -92,13 +99,13 @@ export default function Page() {
       <Section id="contact" title="Contact" caption="Lets connect!">
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="card p-6">
-            <h3 className="font-medium">Skicka ett meddelande</h3>
+            <h3 className="font-medium">Send a message!</h3>
             <form className="mt-4 space-y-4" action="https://formspree.io/f/your-id" method="POST">
               <input name="name" required placeholder="Namn" className="w-full border rounded-xl px-4 py-3" />
               <input name="email" type="email" required placeholder="E-post" className="w-full border rounded-xl px-4 py-3" />
               <textarea name="message" required placeholder="Message" rows={5} className="w-full border rounded-xl px-4 py-3" />
-              <button className="rounded-xl bg-ink-700 px-5 py-3 text-white hover:bg-ink-800 transition" type="submit">
-                Skicka
+              <button className="rounded-xl bg-ink-700 hover:bg-pastel-pink-400 px-5 py-3 text-white hover:scale-105 hover:bg-ink-800 transition" type="submit">
+                Send Message!
               </button>
             </form>
             <p className="text-xs text-slate-500 mt-3">

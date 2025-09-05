@@ -2,7 +2,7 @@ import type { Experience } from "@/content/data";
 
 export function ExperienceItem({ item }: { item: Experience }) {
   return (
-    <article className="card p-5">
+    <article className="card p-5 transition transform hover:scale-[1.02] hover:shadow-lg">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h3 className="font-semibold">{item.title}</h3>
