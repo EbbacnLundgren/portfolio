@@ -115,7 +115,6 @@ export default function Page() {
             <ul className="mt-3 space-y-3">
               <li><a href={data.links.github} className="hover:underline" target="_blank">GitHub</a></li>
               <li><a href={data.links.linkedin} className="hover:underline" target="_blank">LinkedIn</a></li>
-              {data.links.twitter && <li><a href={data.links.twitter} className="hover:underline" target="_blank">Twitter</a></li>}
               <li><a href={`mailto:${data.links.email}`} className="hover:underline">E-post</a></li>
             </ul>
           </div>
