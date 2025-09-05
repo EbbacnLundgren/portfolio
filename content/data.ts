@@ -20,65 +20,71 @@ export type Project = {
 
 export const data = {
   hero: {
-    title: "Hej, jag är Gustav",
+    title: "Ebba Lundgren",
     subtitle:
-      "Full stack-utvecklare som bygger tydliga, robusta lösningar. Fokus på webb, system och data.",
-    location: "Sverige",
+      "Master student in Information- and Communication Engineering at LTH, 5th year",
+    location: "Sweden",
     osRepos: 50
   },
   links: {
-    github: "https://github.com/ditt-anvandarnamn",
-    linkedin: "https://www.linkedin.com/in/ditt-profil",
-    twitter: "",
-    email: "du@example.com",
+    github: "https://github.com/EbbacnLundgren",
+    linkedin: "https://www.linkedin.com/in/ebbacnlundgren/",
+    email: "ebbacn.lundgren@gmail.com",
     resumeUrl: "/cv.pdf"
   },
   experiences: <Experience[]>[
     {
-      company: "Exempelbolaget AB",
-      title: "Software Engineer",
-      period: "2023 — Nu",
+      company: "Axis Communications AB",
+      title: "Software Engineer Internship",
+      period: "June 2025 — August 2025",
       summary:
-        "Bygger skalbara tjänster i TypeScript/Go och modern frontend i React.",
-      achievements: [
-        "Ledde migrering till Next.js App Router",
-        "Sänkte TTFB med 35% genom cache och ISR"
-      ],
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Docker", "AWS"]
+        "Worked with synthetic data at Core Technologies Embedded Analytics",
+
+      tech: ["Python"]
     },
     {
-      company: "Universitetet",
-      title: "Teaching Assistant",
-      period: "2022 — 2023",
+      company: "Lunicore Student Consulting",
+      title: "Software Development Consultant",
+      period: "December 2024 — now",
       summary:
-        "Handledde kurser i datalogins grunder och programvaruutveckling.",
-      tech: ["Java", "Python"]
+        "Consultant in different software projects, both developing and researching"
+    },
+    {
+      company: "Trattoria Montanari",
+      title: "Waiter",
+      period: "June 2020 - August 2024",
+      summary:
+        "Taught five new waitress/waiters during my time in different ages, worked as head waitress aswell"
+
+    },
+    {
+      company: "Alfa Laval",
+      title: "Software Engineer Internship",
+      period: "June 2023 - August 2023",
+    },
+    {
+      company: "Bubbi AI",
+      title: "Software Engineer / Web developer",
+      period: "May 2023 - June 2023",
+      summary: "Developed tracking script for e-commerce to be used by internal ML/AI"
     }
   ],
   projects: <Project[]>[
     {
-      title: "Hundgissningsspelet",
+      title: "Game page",
       description:
-        "Bildbaserat quiz i React med sessionsbaserad statistik och ren design.",
+        "A website with collected games that is fun to play at lunch together with your friends. Currently working on adding a new game. ",
       tags: ["React", "TypeScript", "Vite"],
-      repo: "https://github.com/...",
-      demo: "https://...",
+      repo: "https://github.com/EbbacnLundgren/gamepage",
       year: "2025"
-    },
-    {
-      title: "OTR-protokoll (demo)",
-      description:
-        "Förenklad OTR-implementation med Diffie-Hellman, SMP och OTP.",
-      tags: ["Java", "Python", "Crypto"],
-      repo: "https://github.com/..."
     }
   ],
   education: [
     {
-      school: "Tekniska Högskolan",
-      degree: "BSc Datavetenskap",
-      period: "2021 — 2024",
-      details: "Fördjupning i ML, kryptografi och distribuerade system."
+      school: "Faculty of Engineering (LTH) at Lund University",
+      degree: "MSc Software Systems Engineering",
+      period: "2021 — 2026",
+      details: "Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design"
     }
   ]
 };
