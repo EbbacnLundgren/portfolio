@@ -48,7 +48,7 @@ export function Header() {
         </nav>
         <a
           href={site.ctaUrl}
-          className="hidden sm:inline-flex items-center rounded-xl px-4 py-2 bg-rose-400 text-white hover:bg-rose-500 transition"
+          className="hidden sm:inline-flex items-center rounded-xl px-4 py-2 bg-pink-200 text-white hover:bg-rose-500 transition"
           target="_blank"
         >
           Download Resume
