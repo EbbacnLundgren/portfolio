@@ -24,7 +24,7 @@ export default function Page() {
             </p>
             <p className="text-sm text-slate-500">Location: {data.hero.location}</p>
           <div className="mt-6 flex flex-wrap gap-2">
-            {["Python","TypeScript","React","SQL"].map(t => (
+            {["Java","Python","TypeScript","React","SQL", "JavaScript", "C"].map(t => (
               <span key={t} className="px-3 py-1 rounded-md bg-pink-50 text-pink-700 text-sm border border-pink-100">
                 {t}
               </span>
