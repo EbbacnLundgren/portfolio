@@ -31,18 +31,22 @@ export default function Page() {
               <a href="#experience" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Experience</h3>
                 <p className="text-sm text-slate-600">Professional journey</p>
+                <Briefcase className="w-5 h-5 text-ink-600" />
               </a>
               <a href="#projects" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">My Projects</h3>
                 <p className="text-sm text-slate-600">Things I have built</p>
+                <Code className="w-5 h-5 text-ink-600" />
               </a>
               <a href="#education" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Education</h3>
                 <p className="text-sm text-slate-600">Academic background</p>
+                <GraduationCap className="w-5 h-5 text-ink-600" />
               </a>
               <a href="#contact" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Contact me</h3>
                 <p className="text-sm text-slate-600">Let’s connect</p>
+                <Mail className="w-5 h-5 text-ink-600" />
               </a>
             </div>
           </div>
