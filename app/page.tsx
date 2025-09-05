@@ -11,36 +11,37 @@ export default function Page() {
   return (
     <>
       {/* Hero */}
-      <section className="container-prose pt-6 pb-12 bg-gradient-to-br from-slate-50 to-slate-100">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-ink-900">
+      <section className="container-prose pt-28 pb-14">
+        <div className="grid gap-12 lg:grid-cols-[1.15fr,0.85fr] items-start">
+          {/* Vänster: namn + text */}
+          <div className="space-y-6">
+            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-ink-900">
               {data.hero.title}
             </h1>
-            <p className="mt-4 text-lg text-slate-700">{data.hero.subtitle}</p>
-            
-            <ul className="mt-6 flex flex-wrap gap-6 text-sm text-slate-600">
-              <li>Location: {data.hero.location}</li>
-            </ul>
+            <p className="text-lg text-slate-700 max-w-xl">
+              {data.hero.subtitle}
+            </p>
+            <p className="text-sm text-slate-500">Location: {data.hero.location}</p>
           </div>
+
+          {/* Höger: korten */}
           <div className="card p-6">
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid gap-6 sm:grid-cols-2">
               <a href="#experience" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Experience</h3>
-                <Briefcase className="w-5 h-5 text-ink-600" />
+                <p className="text-sm text-slate-600">Professional journey</p>
               </a>
               <a href="#projects" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">My Projects</h3>
-                <Code className="w-5 h-5 text-ink-600" />
+                <p className="text-sm text-slate-600">Things I’ve built</p>
               </a>
               <a href="#education" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Education</h3>
-                <GraduationCap className="w-5 h-5 text-ink-600" />
+                <p className="text-sm text-slate-600">Learning & growth</p>
               </a>
               <a href="#contact" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
-                <h3 className="font-semibold">Contact me!</h3>
-                <Mail className="w-5 h-5 text-ink-600" />
-                
+                <h3 className="font-semibold">Contact me</h3>
+                <p className="text-sm text-slate-600">Let’s connect</p>
               </a>
             </div>
           </div>
