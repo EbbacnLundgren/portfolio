@@ -34,7 +34,7 @@ export function ExperienceItem({ item }: { item: Experience }) {
           {item.tech.map((t) => (
             <span
               key={t}
-              className="inline-flex items-center rounded-md border border-orange-200 bg-orange-50 px-2.5 py-1 text-xs font-medium text-orange-700"
+              className="inline-flex items-center rounded-md border border-pink-200 bg-pink-50 px-2.5 py-1 text-xs font-medium text-pink-700"
             >
               {t}
             </span>
