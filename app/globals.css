@@ -6,6 +6,10 @@
   --bg: 247 248 252;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
 }

@@ -61,6 +61,7 @@ export const data = {
       company: "Alfa Laval",
       title: "Software Engineer Internship",
       period: "June 2023 - August 2023",
+      summary: "Python and SQL"
     },
     {
       company: "Bubbi AI",
