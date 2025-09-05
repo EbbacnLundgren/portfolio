@@ -38,11 +38,13 @@ export function Header() {
           {site.shortName}
         </Link>
         <nav className="hidden md:flex gap-8 text-lg font-medium">
-          {items.map((it) => (
+          {items.map(it => (
             <a
-              key={it.href}
-              href={it.href}
-              className="relative px-2 py-1 text-slate-600 hover:text-ink-700 transition-colors after:block after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
+              key={it.href} href={it.href}
+              className="relative px-2 py-1 text-slate-700 hover:text-orange-600 transition-colors
+                        after:absolute after:left-2 after:right-2 after:-bottom-0.5 after:h-[2px]
+                        after:scale-x-0 after:bg-orange-500 after:transition-transform after:origin-left
+                        hover:after:scale-x-100"
             >
               {it.label}
             </a>
