@@ -85,6 +85,11 @@ export const data = {
       degree: "MSc Software Systems Engineering",
       period: "2021 — 2026",
       details: "Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design"
+    },
+    {
+      school: "Enskilda Gymnasiet at Tegnérlunden in Stockholm",
+      degree: "Natural Science Program",
+      period: "2017 — 2020",
     }
   ]
 };
