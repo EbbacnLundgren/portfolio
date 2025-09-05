@@ -3,7 +3,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { site } from "@/lib/site";
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+
 
 const items = [
   { href: "#experience", label: "Experience" },
@@ -25,7 +27,7 @@ export function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full z-50 transition-all bg-orange-100/70 backdrop-blur border-b border-orange-200",
+        "fixed top-0 w-full z-50 transition-all",
         scrolled
           ? "bg-white/80 backdrop-blur shadow-sm"
           : "bg-transparent"
@@ -40,7 +42,7 @@ export function Header() {
             <a
               key={it.href}
               href={it.href}
-              className="relative text-slate-700 hover:text-orange-600 transition-colors after:block after:h-[2px] after:w-0 after:bg-orange-400 after:transition-all hover:after:w-full"
+              className="relative text-slate-600 hover:text-ink-700 transition-colors after:block after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
             >
               {it.label}
             </a>
@@ -48,7 +50,7 @@ export function Header() {
         </nav>
         <a
           href={site.ctaUrl}
-          className="hidden sm:inline-flex items-center rounded-xl px-4 py-2 bg-pink-200 text-white hover:bg-rose-500 transition"
+          className="hidden sm:inline-flex items-center rounded-xl px-4 py-2 bg-rose-400 text-white hover:bg-rose-500 transition"
           target="_blank"
         >
           Download Resume
