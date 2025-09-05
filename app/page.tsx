@@ -16,10 +16,12 @@ export default function Page() {
         <div className="grid gap-12 lg:grid-cols-[1.15fr,0.85fr] items-start">
           {/* Vänster: namn + text */}
           <div className="space-y-6 pt-2">
-            <h1 className="inline-block text-5xl sm:text-6xl font-bold tracking-tight bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent leading-[1.15]">
-              {data.hero.title}
+            <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-[1.2]">
+              <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent [-webkit-text-fill-color:transparent]">
+                {data.hero.title}
+              </span>
             </h1>
-            <p className="text-lg text-slate-700 max-w-xl">
+                      <p className="text-lg text-slate-700 max-w-xl">
               {data.hero.subtitle}
             </p>
             <p className="text-sm text-slate-500">Location: {data.hero.location}</p>
