@@ -33,11 +33,11 @@ export default function Page() {
               </a>
               <a href="#projects" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">My Projects</h3>
-                <p className="text-sm text-slate-600">Things I’ve built</p>
+                <p className="text-sm text-slate-600">Things I have built</p>
               </a>
               <a href="#education" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Education</h3>
-                <p className="text-sm text-slate-600">Learning & growth</p>
+                <p className="text-sm text-slate-600">Academic background</p>
               </a>
               <a href="#contact" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
                 <h3 className="font-semibold">Contact me</h3>

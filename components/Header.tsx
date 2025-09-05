@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const items = [
   { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Project" },
+  { href: "#projects", label: "Projects" },
   { href: "#education", label: "Education" },
   { href: "#contact", label: "Contact" }
 ];
@@ -37,12 +37,12 @@ export function Header() {
         <Link href="/" className="font-semibold tracking-tight text-ink-900">
           {site.shortName}
         </Link>
-        <nav className="hidden md:flex gap-6 text-sm">
+        <nav className="hidden md:flex gap-8 text-lg font-medium">
           {items.map((it) => (
             <a
               key={it.href}
               href={it.href}
-              className="relative text-slate-600 hover:text-ink-700 transition-colors after:block after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
+              className="relative px-2 py-1 text-slate-600 hover:text-ink-700 transition-colors after:block after:h-[2px] after:w-0 after:bg-rose-400 after:transition-all hover:after:w-full"
             >
               {it.label}
             </a>
