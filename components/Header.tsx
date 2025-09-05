@@ -5,10 +5,10 @@ import { site } from "@/lib/site";
 import clsx from "clsx";
 
 const items = [
-  { href: "#experience", label: "Erfarenhet" },
-  { href: "#projects", label: "Projekt" },
-  { href: "#education", label: "Utbildning" },
-  { href: "#contact", label: "Kontakt" }
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Project" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" }
 ];
 
 export function Header() {

@@ -20,38 +20,34 @@ export default function Page() {
                 href="#projects"
                 className="inline-flex items-center rounded-xl bg-ink-700 px-5 py-3 text-white hover:bg-ink-800 transition"
               >
-                Visa projekt
+                Show project
               </Link>
               <a
                 href={data.links.resumeUrl}
                 className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-50"
                 target="_blank"
               >
-                Ladda ner CV
+                Download my CV
               </a>
             </div>
             <ul className="mt-6 flex flex-wrap gap-6 text-sm text-slate-600">
-              <li>Plats: {data.hero.location}</li>
-              <li>Öppna källkod: {data.hero.osRepos}+ repo</li>
+              <li>Location: {data.hero.location}</li>
             </ul>
           </div>
           <div className="card p-6">
             <div className="grid sm:grid-cols-2 gap-4">
               <a href="#experience" className="card p-5 hover:shadow-md transition">
-                <h3 className="font-semibold">Erfarenhet</h3>
-                <p className="text-sm text-slate-600">Professionell resa</p>
+                <h3 className="font-semibold">Experience</h3>
               </a>
               <a href="#projects" className="card p-5 hover:shadow-md transition">
-                <h3 className="font-semibold">Projekt</h3>
-                <p className="text-sm text-slate-600">Saker jag byggt</p>
+                <h3 className="font-semibold">My Projects</h3>
               </a>
               <a href="#education" className="card p-5 hover:shadow-md transition">
-                <h3 className="font-semibold">Utbildning</h3>
-                <p className="text-sm text-slate-600">Lärande och tillväxt</p>
+                <h3 className="font-semibold">Education</h3>
               </a>
               <a href="#contact" className="card p-5 hover:shadow-md transition">
-                <h3 className="font-semibold">Kontakt</h3>
-                <p className="text-sm text-slate-600">Hör av dig</p>
+                <h3 className="font-semibold">Contact me!</h3>
+                <p className="text-sm text-slate-600">Say Hi!</p>
               </a>
             </div>
           </div>
@@ -59,7 +55,7 @@ export default function Page() {
       </section>
 
       {/* Experience */}
-      <Section id="experience" title="Erfarenhet" caption="Roller, ansvar och resultat">
+      <Section id="experience" title="Experience">
         <div className="space-y-6">
           {data.experiences.map((e) => (
             <ExperienceItem key={e.company + e.title} item={e} />
@@ -68,7 +64,7 @@ export default function Page() {
       </Section>
 
       {/* Projects */}
-      <Section id="projects" title="Projekt" caption="Urval av egna projekt">
+      <Section id="projects" title="Projects">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.projects.map((p) => (
             <ProjectCard key={p.title} project={p} />
@@ -77,7 +73,7 @@ export default function Page() {
       </Section>
 
       {/* Education */}
-      <Section id="education" title="Utbildning" caption="Studier och certifikat">
+      <Section id="education" title="Education">
         <ul className="space-y-4">
           {data.education.map((ed) => (
             <li key={ed.school} className="card p-5">
@@ -93,14 +89,14 @@ export default function Page() {
       </Section>
 
       {/* Contact */}
-      <Section id="contact" title="Kontakt" caption="Låt oss prata">
+      <Section id="contact" title="Contact" caption="Lets connect!">
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="card p-6">
             <h3 className="font-medium">Skicka ett meddelande</h3>
             <form className="mt-4 space-y-4" action="https://formspree.io/f/your-id" method="POST">
               <input name="name" required placeholder="Namn" className="w-full border rounded-xl px-4 py-3" />
               <input name="email" type="email" required placeholder="E-post" className="w-full border rounded-xl px-4 py-3" />
-              <textarea name="message" required placeholder="Meddelande" rows={5} className="w-full border rounded-xl px-4 py-3" />
+              <textarea name="message" required placeholder="Message" rows={5} className="w-full border rounded-xl px-4 py-3" />
               <button className="rounded-xl bg-ink-700 px-5 py-3 text-white hover:bg-ink-800 transition" type="submit">
                 Skicka
               </button>
