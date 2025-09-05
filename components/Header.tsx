@@ -27,13 +27,13 @@ export function Header() {
   return (
     <header
       className={clsx(
-        "fixed top-0 w-full z-50 transition-all",
+        "fixed top-0 w-full bg-white/80 backdrop-blur shadow-sm z-50",
         scrolled
           ? "bg-white/80 backdrop-blur shadow-sm"
           : "bg-transparent"
       )}
     >
-      <div className="container-prose flex h-16 items-center justify-between">
+      <div className="container-prose flex h-20 items-center justify-between">
         <Link href="/" className="font-semibold tracking-tight text-ink-900">
           {site.shortName}
         </Link>

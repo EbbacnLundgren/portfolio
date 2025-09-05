@@ -18,21 +18,7 @@ export default function Page() {
               {data.hero.title}
             </h1>
             <p className="mt-4 text-lg text-slate-700">{data.hero.subtitle}</p>
-            <div className="mt-6 flex gap-3">
-              <Link
-                href="#projects"
-                className="inline-flex items-center rounded-xl bg-ink-700 px-5 py-3 text-white hover:bg-ink-800 transition"
-              >
-                Show projects
-              </Link>
-              <a
-                href={data.links.resumeUrl}
-                className="inline-flex items-center rounded-xl border px-5 py-3 hover:bg-slate-50"
-                target="_blank"
-              >
-                Download my Resume
-              </a>
-            </div>
+            
             <ul className="mt-6 flex flex-wrap gap-6 text-sm text-slate-600">
               <li>Location: {data.hero.location}</li>
             </ul>
