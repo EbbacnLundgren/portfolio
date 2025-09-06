@@ -113,7 +113,7 @@ export const data = {
       ]
     },
     {
-      school: "Enskilda Gymnasiet at Tegnérlunden in Stockholm",
+      school: "Enskilda Gymnasiet in Tegnérlunden in Stockholm",
       degree: "Natural Science Program",
       period: "2017 — 2020",
       involvement: [
