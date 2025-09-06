@@ -105,7 +105,7 @@ export const data = {
       degree: "MSc Software Systems Engineering",
       period: "2021 — 2026",
       details: 
-      "Some of the courses: Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design.",
+      "Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design.",
       involvement: [
         "Event Manager for the Business Committee (Data Section)",
         "Financial Manager for D-Chip (association for women and non-binary individuals in the Data Section)",
