@@ -75,18 +75,19 @@ export function ProjectCard({ project }: { project: Project }) {
             </span>
           )}
 
-          {project.repo && (
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm
-                         text-slate-700 hover:bg-slate-50 transition"
-            >
-              View code
-            </a>
-          )}
+          {project.repo && project.demo && (
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm
+                          text-slate-700 hover:bg-slate-50 transition"
+              >
+                View code
+              </a>
+            )}
+          
         </div>
       </div>
     </div>
