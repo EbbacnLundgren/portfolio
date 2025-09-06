@@ -11,7 +11,6 @@ export function ProjectCard({ project }: { project: Project }) {
 
   const handleOpen = () => {
     if (!primaryHref) return;
-    // Öppna i ny flik (oftast externa länkar)
     window.open(primaryHref, "_blank", "noopener,noreferrer");
   };
 
@@ -70,14 +69,12 @@ export function ProjectCard({ project }: { project: Project }) {
         )}
 
         <div className="mt-4 flex items-center gap-4">
-          {/* Primär action hint (visas bara om demo/repo finns) */}
           {primaryHref && (
             <span className="text-sm text-slate-500">
               {project.demo ? "Open demo" : "Open repo"}
             </span>
           )}
 
-          {/* Sekundär: direktkod-knapp. Stoppa klick från att bubbla upp. */}
           {project.repo && (
             <a
               href={project.repo}
