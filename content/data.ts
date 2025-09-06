@@ -96,7 +96,13 @@ export const data = {
       school: "Faculty of Engineering (LTH) at Lund University",
       degree: "MSc Software Systems Engineering",
       period: "2021 — 2026",
-      details: "Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design"
+      details: `
+      Some of the courses: Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design.
+
+      Other activities:
+      • Event Manager for the Business Committee at LTH (Data Section).
+      • Financial Manager for the D-Chip board (association for women and non-binary individuals in the Data Section).
+      `
     },
     {
       school: "Enskilda Gymnasiet at Tegnérlunden in Stockholm",
