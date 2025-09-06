@@ -5,12 +5,12 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="card overflow-hidden hover:shadow-lg transition">
       {project.image && (
-        <div className="relative h-48 w-full">
+        <div className="relative h-48 w-full overflow-hidden">
           <Image
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       )}
