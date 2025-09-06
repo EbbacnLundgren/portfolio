@@ -1,18 +1,33 @@
-"use client";
-import { motion } from "framer-motion";
+import Image from "next/image";
 import type { Project } from "@/content/data";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.4 }}
-      className="card p-5 hover:-translate-y-1 hover:shadow-lg transition"
-    >
-      <h3 className="font-semibold">{project.title}</h3>
-      <p className="mt-2 text-slate-700 text-sm">{project.description}</p>
-    </motion.article>
+    <article className="card overflow-hidden hover:shadow-lg transition">
+      {project.image && (
+        <div className="relative h-48 w-full">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
+        </div>
+      )}
+      <div className="p-5">
+        <h3 className="font-semibold text-lg">{project.title}</h3>
+        <p className="text-sm text-slate-600 mt-2">{project.description}</p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {project.tags.map((tag) => (
+            <span
+              key={tag}
+              className="px-2 py-1 text-xs rounded-md bg-slate-100 text-slate-700"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+    </article>
   );
 }

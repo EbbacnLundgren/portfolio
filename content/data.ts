@@ -46,7 +46,7 @@ export const data = {
       title: "Software Development Consultant",
       period: "December 2024 — now",
       summary:
-        "Consultant in different software projects, both developing and researching"
+        "Consultant in software projects, combining development with digital improvement initiatives."
     },
     {
       company: "Alfa Laval",
@@ -66,7 +66,7 @@ export const data = {
       title: "Waiter",
       period: "June 2020 - August 2024",
       summary:
-        "Taught five new waitress/waiters during my time in different ages, worked as head waitress aswell"
+        "Waitress with recurring employment across summers. Responsible for training five new colleagues and occasionally serving as head waitress during busy evenings."
 
     }
   ],
@@ -77,7 +77,17 @@ export const data = {
         "A website with collected games that is fun to play at lunch together with your friends. Currently working on adding a new game. ",
       tags: ["React", "TypeScript", "Vite"],
       repo: "https://github.com/EbbacnLundgren/gamepage",
-      year: "2025"
+      year: "2025",
+      image: "/projects/gamepage.png"
+    },
+    {
+      title: "Our Little Chef",
+      description:
+        "An interactive game built in a university course using Arduino sensors and microcontrollers. Designed to help children feel more confident in the kitchen by practicing basic cooking tasks in a playful and safe environment. Developed collaboratively in a group project, combining hardware prototyping with engaging game design.",
+      tags: ["Arduino", "C++", "Hardware", "Game Design", "C", "Usability", "Java"],
+      repo: "https://github.com/EbbacnLundgren/ourlittlechef",
+      year: "2024",
+      image: "/projects/ourlittlechef.png"
     }
   ],
   education: [
