@@ -47,7 +47,7 @@ export const data = {
       summary:
         "Worked with synthetic data at Core Technologies Embedded Analytics",
 
-      tech: ["Python, Unreal Engine, Houdini"]
+      tech: ["Python, Design Tools"]
     },
     {
       company: "Lunicore Student Consulting",
@@ -60,6 +60,7 @@ export const data = {
       company: "Alfa Laval",
       title: "Software Engineer Internship",
       period: "June 2023 - August 2023",
+      summary: "Developed an internal tool as a solo project",
       tech: ["Python and SQL"]
     },
     {
