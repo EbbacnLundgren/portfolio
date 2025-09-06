@@ -18,6 +18,14 @@ export type Project = {
   year?: string;
 };
 
+export type Education = {
+  school: string;
+  degree: string;
+  period: string;
+  details?: string;
+  involvement?: string[];
+};
+
 export const data = {
   hero: {
     title: "Ebba Lundgren",
@@ -63,7 +71,7 @@ export const data = {
     },
     {
       company: "Trattoria Montanari",
-      title: "Waiter",
+      title: "Waitress",
       period: "June 2020 - August 2024",
       summary:
         "Waitress with recurring employment across summers. Responsible for training five new colleagues and occasionally serving as head waitress during busy evenings."
@@ -97,13 +105,19 @@ export const data = {
       degree: "MSc Software Systems Engineering",
       period: "2021 — 2026",
       details: 
-      "Some of the courses: Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design."
+      "Some of the courses: Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design.",
+      involvement: [
+        "Event Manager for the Business Committee (Data Section)",
+        "Financial Manager for D-Chip (association for women and non-binary individuals in the Data Section)",
+      ]
     },
     {
       school: "Enskilda Gymnasiet at Tegnérlunden in Stockholm",
       degree: "Natural Science Program",
       period: "2017 — 2020",
-      details: "Active member of SIPSI (student sports association), where I trained and competed alongside my studies."
+      involvement: [
+        "Active member of SIPSI (student sports association); trained and competed alongside studies"
+      ]
     }
   ]
 };
