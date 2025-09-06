@@ -109,7 +109,7 @@ export const data = {
       "Some of my favourite courses: Concurrent programming, Machine Learning, Cyber Security, Database Technology, Internet Inside, Software Testing, Wireless Networks, Secured Systems, OOP & Design.",
       involvement: [
         "Event Manager for the Business Committee (Data Section)",
-        "Financial Manager for D-Chip (association for women and non-binary individuals in the Data Section)",
+        "Financial Manager for D-Chip (association for women and non-binary individuals at the Data Section)",
       ]
     },
     {
