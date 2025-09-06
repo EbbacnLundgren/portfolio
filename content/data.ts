@@ -77,6 +77,7 @@ export const data = {
         "A website with collected games that is fun to play at lunch together with your friends. Currently working on adding a new game. ",
       tags: ["React", "TypeScript", "Vite"],
       repo: "https://github.com/EbbacnLundgren/gamepage",
+      demo: "https://gamepage.vercel.app",
       year: "2025",
       image: "/projects/gamepage.png"
     },
