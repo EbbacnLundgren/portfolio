@@ -5,6 +5,7 @@ import { ExperienceItem } from "@/components/ExperienceItem";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Briefcase, GraduationCap, Code, Mail } from "lucide-react";
 import Contact from "@/components/Contact";
+import EducationSection from "@/components/EducationSection";
 
 
 
@@ -14,7 +15,6 @@ export default function Page() {
       {/* Hero */}
       <section className="container-prose pt-28 pb-14">
         <div className="grid gap-12 lg:grid-cols-[1.15fr,0.85fr] items-start">
-          {/* Vänster: namn + text */}
           <div className="space-y-6 pt-2">
             <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight leading-[1.2]">
               <span className="bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent [-webkit-text-fill-color:transparent]">
@@ -34,7 +34,6 @@ export default function Page() {
           </div>
         </div>
 
-          {/* Höger: korten */}
           <div className="card p-6">
             <div className="grid gap-6 sm:grid-cols-2">
               <a href="#experience" className="card p-5 transition hover:shadow-lg hover:-translate-y-1">
@@ -81,21 +80,7 @@ export default function Page() {
       </Section>
 
       {/* Education */}
-      <Section id="education" title="Education">
-        <ul className="space-y-4">
-          {data.education.map((ed) => (
-            <li key={ed.school} className="card p-5">
-              <div className="flex items-baseline justify-between">
-                <h3 className="font-semibold">{ed.school}</h3>
-                <span className="text-sm text-slate-500">{ed.period}</span>
-              </div>
-              <p className="text-slate-700 mt-1">{ed.degree}</p>
-              {ed.details && <p className="text-sm text-slate-600 mt-2">{ed.details}</p>}
-            </li>
-          ))}
-        </ul>
-      </Section>
-
+      <EducationSection />
       {/* Contact */}
       <Contact />
     </>
