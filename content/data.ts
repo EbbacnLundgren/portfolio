@@ -116,7 +116,7 @@ export const data = {
       degree: "Natural Science Program",
       period: "2017 — 2020",
       involvement: [
-        "Active member of SIPSI (student sports association); trained and competed alongside studies"
+        "Active member of SIPSI (student sports association) where I trained and competed alongside studies"
       ]
     }
   ]
